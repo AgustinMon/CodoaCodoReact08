@@ -1,6 +1,6 @@
 import React from "react";
-
-export default class Video extends React.Component{
+import './video.css';
+export default class Video extends React.Component {
 
     //Params:
 
@@ -15,11 +15,13 @@ export default class Video extends React.Component{
     render() {
 
         return (
-            <section class="block">
+            <section className="block">
                 <h3>Elemento video</h3>
-                <video controls>
+                <div className="contenedor">
+                    <video controls>
                         Your browser does not support the video tag.
-                </video>
+                    </video>
+                </div>
             </section>)
     }
 

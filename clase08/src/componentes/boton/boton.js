@@ -7,9 +7,9 @@ export default class Boton extends React.Component{
 
     render() {
         return (
-        <section class="block">
-        <h3>Elemento Boton</h3>
-        <button>Hola</button>
+        <section className="block">
+        <h3>Elemento Boton con Bootstrap importado desde npm</h3>
+        <button className="btn btn-danger btn-lg">Hola</button>
         </section>);
     }
 

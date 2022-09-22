@@ -13,7 +13,7 @@ export default class Lista extends React.Component{
 
     render() {
         return (
-            <section class="block">
+            <section className="block">
                 <h3>Elemento Lista</h3>
                 <ul>
                 </ul></section>

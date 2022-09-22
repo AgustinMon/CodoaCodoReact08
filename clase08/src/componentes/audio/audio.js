@@ -9,20 +9,16 @@ export default class Audio extends React.Component{
     getList(){
         let elementos = "";
         for(let l of audioList){
-            elementos += `<li>${l.texto} : 
-                <br/><audio controls>
-                <source src="${l.url}" type="audio/mp3">
-                Your browser does not support the audio element.
-                </audio></li>`;
+            elementos += <li>{l.texto}</li>;
         }
         return elementos;
     }
 
     render(){
-        return (<section class="block">
-        <h3>Elemento Audio viene de un objeto con ${audioList.length} elementos</h3>
+        return (<section className="block">
+        <h3>Elemento Audio viene de un objeto con {audioList.length} elementos</h3>
         <ul id="audiolist">
-        ${this.getList()} 
+        {this.getList()} 
         </ul>
         </section>);
     }

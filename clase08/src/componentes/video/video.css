@@ -1,0 +1,12 @@
+:root{
+    --ancho : 400px;
+}
+.contenedor{
+    margin: 0 auto 0 auto;
+    width: var(--ancho);
+}
+
+video{
+    width: 100%;
+    margin-bottom: 20px;
+}

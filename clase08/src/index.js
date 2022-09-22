@@ -1,19 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
 import './index.css';
-import Boton from './componentes/boton';
-import Video from './componentes/video';
-import Audio from './componentes/audio';
-import Input from './componentes/input';
-import Lista from './componentes/lista';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Boton/>
-    <Video/>
-    <Audio/>
-    <Input/>
-    <Lista/>
+    <App />
   </React.StrictMode>
 );
