@@ -12,16 +12,16 @@ function App() {
         Codo a codo React Clase 08 en adelante
       </header>
       <main>
-        <Boton />
-        <Video />
-        <Audio />
         <Input />
-        <Lista />
+        <Lista elementos={["pera","manzana","kiwi"]}/>
+        <Audio />
+        <Boton />
+        <Video url="../media/movie.mp4" titulo="deberia salir un video de un oso"/>
       </main>
-      <header className="App-footer">
+      <footer className="App-footer">
         <p>Agustin</p>
         <p>comision 22801</p>
-      </header>
+      </footer>
     </div>
   );
 }

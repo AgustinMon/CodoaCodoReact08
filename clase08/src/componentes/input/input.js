@@ -1,27 +1,30 @@
 import React from "react";
+import './input.css';
 
-export default class Input extends React.Component{
+export default class Input extends React.Component {
 
-    evaluar(){
-        document.getElementById("input").addEventListener("keyup", (e)=>{
+    evaluar() {
+        document.getElementById("input").addEventListener("keyup", (e) => {
             let value = e.target.value;
-            if(value === "perro"){
+            if (value === "perro") {
                 e.target.style.border = "3px solid yellow";
-                document.getElementById("result").innerHTML=`<span id="check">✔</span>`;
+                document.getElementById("result").innerHTML = `<span id="check">✔</span>`;
             }
-            else{
+            else {
                 e.target.style.border = "3px solid red";
-                document.getElementById("result").innerHTML=`<span id="cross">✘</span>`;
+                document.getElementById("result").innerHTML = `<span id="cross">✘</span>`;
             }
         });
     }
 
-    render(){
+    render() {
         return (
-        <section class="block">
-        <h3>Prueba input: escribir palabra "perro"</h3>
-        <input id="input" type="text" placeholder="ingrese la palabra perro"/>
-        <span id="result"></span>
-        </section>)
+            <section className="block">
+                <h3>Prueba input: escribir palabra "perro"</h3>
+                <div className="contenedor">
+                    <input id="input" type="text" placeholder="ingrese la palabra perro" onChange={this.evaluar} />
+                    <span id="result"></span>
+                </div>
+            </section>)
     }
 }

@@ -9,6 +9,14 @@
   padding: 0;
 }
 
+li{
+  text-decoration: none;
+}
+
+button{
+  margin: 0 auto 0 auto !important;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 80px;
@@ -30,14 +38,15 @@ main{
 .block{
   display: block;
   margin-left: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   width: 100%;
-  min-height: 250px;
+  min-height: 150px;
   background-color: var(--fondo);
 }
 
 h3{
   padding: 20px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 

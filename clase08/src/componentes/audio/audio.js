@@ -7,9 +7,14 @@ export default class Audio extends React.Component{
     }
 
     getList(){
-        let elementos = "";
+        let elementos = [];
         for(let l of audioList){
-            elementos += <li>{l.texto}</li>;
+            elementos.push(<li>
+            {l.texto}
+            <audio controls>
+                <source src={l.url}  type="audio/ogg"/>
+            </audio>
+            </li>);
         }
         return elementos;
     }
@@ -26,15 +31,15 @@ export default class Audio extends React.Component{
 
 const audioList = [
     {
-        url : "./media/horse.ogv",
+        url : "../media/horse.ogv",
         texto : "audio caballo"
     },
     {
-        url : "./media/horse.ogv",
+        url : "../media/horse.ogv",
         texto : "audio 2"
     },
     {
-        url : "./media/horse.ogv",
+        url : "../media/horse.ogv",
         texto : "audio 3"
     }
 
