@@ -17,8 +17,7 @@ export default class Video extends React.Component{
         return (
             <section class="block">
                 <h3>Elemento video</h3>
-                <video width="${this.width}" height="${this.height}" className="${this.css_class}" controls>
-                    <source src="${this.url}" type="video/mp4"/>
+                <video controls>
                         Your browser does not support the video tag.
                 </video>
             </section>)
